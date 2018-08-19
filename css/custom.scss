@@ -47,7 +47,12 @@
   left: 10px;
   top: 20px;
   z-index: 0;
-  @media (max-width: 600px) {
+  
+  @media (max-width: 800px) {
+    height: 260px;
+    // display: none;
+  }
+   @media (max-width: 600px) {
     height: 160px;
     // display: none;
   }

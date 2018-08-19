@@ -39,6 +39,9 @@
   left: 10px;
   top: 20px;
   z-index: 0; }
+  @media (max-width: 800px) {
+    .moon {
+      height: 260px; } }
   @media (max-width: 600px) {
     .moon {
       height: 160px; } }

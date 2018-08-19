@@ -1,5 +1,5 @@
 .std-banner {
-  font-family: 'Monoton', sans-serif;
+  text-transform: uppercase;
   text-align: center;
   background-color: #434056;
   color: white;
@@ -16,10 +16,12 @@
 .std-details {
   position: relative;
   z-index: 1;
-  text-shadow: 1px 1px 3px #434056; }
+  text-shadow: 1px 1px 3px #434056;
+  font-family: 'Open Sans Condensed', sans-serif; }
 
 .date {
   color: #E3D6D9;
+  font-family: 'Monoton', sans-serif;
   font-size: 100px; }
   @media (max-width: 600px) {
     .date {

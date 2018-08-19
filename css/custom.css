@@ -1,0 +1,33 @@
+.stdbanner {
+  font-family: 'Monoton', sans-serif;
+  text-align: center;
+  background-color: #434056;
+  color: white;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.std {
+  font-size: 40px;
+  margin: 0; }
+
+.date {
+  color: #E3D6D9;
+  font-size: 100px; }
+
+.tophat {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.moon {
+  position: absolute;
+  left: 0;
+  top: 20px; }
+
+.bw {
+  filter: grayscale(100%); }
+
+/*# sourceMappingURL=custom.css.map */

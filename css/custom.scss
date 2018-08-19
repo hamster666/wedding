@@ -21,7 +21,7 @@
 .std-details {
   position: relative;
   z-index: 1;
-  text-shadow: 1px 2px 1px #434056;
+  text-shadow: 1px 1px 3px #434056;
 }
 
 .date {
@@ -44,7 +44,7 @@
 
 .moon {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 20px;
   z-index: 0;
   @media (max-width: 600px) {

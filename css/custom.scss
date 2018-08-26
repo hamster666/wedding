@@ -1,15 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 .std-banner {
   text-transform: uppercase;
   text-align: center;
-  background-color: #434056;
-  // background-color: #333;
+  background-color: #434057;
   color: white;
   height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // font-weight: 400;
+  padding-top: 30%;
+  overflow: hidden;
+
+  
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+  }
 }
 
 .std {
@@ -21,13 +30,18 @@
   position: relative;
   z-index: 1;
   text-shadow: 1px 1px 3px #434056;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-shadow: 3px 3px 0px black;
+
 }
 
 .date {
   color: #E3D6D9;
   font-family: 'Monoton', sans-serif;
   font-size: 100px;
+  font-weight: 400;
+
   @media (max-width: 600px) {
     font-size: 60px;
   }
@@ -35,10 +49,9 @@
 
 .tophat {
   position: absolute;
-  right: 0; 
-  bottom: 0; 
   z-index: 0;
   @media (max-width: 600px) {
+    right: 0; 
     height: 340px;
   }
 }
@@ -48,14 +61,25 @@
   left: 10px;
   top: 20px;
   z-index: 0;
+  @media (max-width: 800px) {
+    display: block;
+    height: 260px;
+  }
+  @media (max-width: 600px) {
+    height: 160px;
+    display: none;
+  }
+}
+
+.stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 80%;
 
   @media (max-width: 800px) {
-    height: 260px;
-    // display: none;
-  }
-   @media (max-width: 600px) {
-    height: 160px;
-    // display: none;
+    width: 80%;
   }
 }
 

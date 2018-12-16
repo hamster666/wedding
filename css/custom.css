@@ -1,20 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script|Playfair+Display:400italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic|Roboto+Condensed);
 * {
   box-sizing: border-box; }
 
 @font-face {
-  font-family: 'CanelaBlack';
-  src: url("../fonts/Canela-Black.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal; }
-@font-face {
   font-family: 'CanelaBold';
   src: url("../fonts/Canela-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal; }
-@font-face {
-  font-family: 'CanelaRegular';
-  src: url("../fonts/Canela-Regular.otf") format("opentype");
   font-weight: 700;
   font-style: normal; }
 * {
@@ -22,27 +12,79 @@
 
 body {
   background-color: #434057;
-  font-family: Helvetica; }
+  background-color: #493D55;
+  font-family: 'Roboto Condensed', serif; }
 
 h1, h2, h3 {
   font-family: 'CanelaBold', sans-serif;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8); }
 
 h1 {
+  color: white;
   font-size: 50px;
+  transition: all 300ms ease; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 38px;
+      margin-bottom: 50px; } }
+  h1:hover {
+    letter-spacing: 2px; }
+    h1:hover .amp {
+      color: #FFD93A;
+      margin-left: -42px;
+      opacity: 1; }
+
+a {
   color: white; }
+  a:hover {
+    color: #FFD93A; }
+
+nav {
+  background: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  z-index: 2; }
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    line-height: 1;
+    transition: 300ms ease; }
+    nav a:hover {
+      background: #967ab1; }
+
+.party {
+  border: 10px solid #fcffed; }
 
 .amp {
   position: absolute;
   left: 50%;
-  margin-left: -41px;
-  top: -70px;
+  margin-left: -42px;
+  top: -100px;
   font-weight: 400;
   font-family: 'Playfair Display', serif;
   font-size: 160px;
-  color: #dedede;
+  color: #eeeeee;
   opacity: .8;
-  z-index: -1; }
+  z-index: 0;
+  transition: all 300ms ease; }
+  @media (max-width: 768px) {
+    .amp {
+      font-size: 140px;
+      margin-left: -42px;
+      top: -84px; } }
+  @media (max-width: 768px) {
+    .amp {
+      font-size: 140px;
+      margin-left: -42px;
+      top: -62px; } }
 
 label, fieldset {
   display: block;
@@ -52,19 +94,41 @@ label, fieldset {
 fieldset label {
   margin-bottom: 0; }
 
+img {
+  max-width: 100%;
+  z-index: 0; }
+
+.button {
+  color: white;
+  border: 4px solid white;
+  display: block;
+  width: 200px;
+  text-decoration: none;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  transition: all 300ms ease;
+  background: transparent; }
+  .button:hover {
+    background: #967ab1;
+    box-shadow: 6px 6px 0px #FFD93A; }
+  .button.center {
+    margin: 0 auto 20px; }
+
 .background {
-  padding: 50px;
-  background-color: #434057;
+  padding: 100px 50px 50px;
   color: white;
   position: relative;
-  padding-top: 30%;
-  overflow: hidden; }
-  @media (min-width: 768px) {
+  overflow: hidden;
+  background: url(../img/stars.png) no-repeat;
+  background-size: 65%; }
+  @media (max-width: 768px) {
     .background {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-top: 0; } }
+      padding-top: 0;
+      padding: 20px; } }
 
 .intro {
   text-align: center; }
@@ -76,24 +140,6 @@ fieldset label {
   max-width: 500px;
   margin: 50px auto;
   min-height: 100vh; }
-
-.date {
-  color: #E3D6D9;
-  color: #F3E9EB;
-  font-family: 'CanelaBlack', sans-serif;
-  font-weight: 900;
-  letter-spacing: 5px;
-  line-height: 1;
-  margin-bottom: 10px;
-  font-size: 60px;
-  text-shadow: 2px 2px 0px #34A3BB; }
-  @media (min-width: 600px) {
-    .date {
-      text-shadow: 4px 4px 0px #34A3BB;
-      font-size: 100px; } }
-  @media (min-width: 1000px) {
-    .date {
-      font-size: 120px; } }
 
 .tophat {
   position: absolute;
@@ -107,7 +153,7 @@ fieldset label {
 .moon {
   position: absolute;
   left: 10px;
-  top: 20px;
+  top: 165px;
   z-index: 0;
   height: 300px; }
   @media (max-width: 1100px) {

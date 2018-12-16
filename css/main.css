@@ -112,45 +112,6 @@ textarea {
   /*font-weight: 400;*/
 }
 
-.std {
-  font-size: 40px;
-  margin: 0;
-}
-
-.date {
-  color: #E3D6D9;
-  font-size: 100px;
-  /*font-weight: bold;*/
-}
-
-.tophat {
-  position: absolute;
-  right: 0; 
-  bottom: 0; 
-}
-
-.moon {
-  position: absolute;
-  left: 0;
-  top: 20px;
-}
-
-.bw {
-  filter: grayscale(100%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */

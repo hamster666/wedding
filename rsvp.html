@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="robots" content="noindex" />
-  
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
@@ -57,11 +57,11 @@
         <fieldset>
           <legend>RSVP</legend>
           <label>
-            <input type="radio" name="guestName" required>
+            <input type="radio" name="guestName" required value="attending">
             Can't wait!
           </label>
           <label>
-            <input type="radio" name="guestName" required>
+            <input type="radio" name="guestName" required value="not attending">
             Can't make it :(
           </label>
         </fieldset>
@@ -69,19 +69,19 @@
         <fieldset>
           <legend>Dietary requirements</legend>
           <label>
-            <input type="radio" name="dietRequirements">
+            <input type="radio" name="dietRequirements" value="none">
             I'll eat anything
           </label>
           <label>
-            <input type="radio" name="dietRequirements">
+            <input type="radio" name="dietRequirements" value="vegetarian">
             Vegetarian
           </label>
           <label>
-            <input type="radio" name="dietRequirements">
+            <input type="radio" name="dietRequirements" value="vegan">
             Vegan
           </label>
           <label>
-            <input type="radio" name="dietRequirements">
+            <input type="radio" name="dietRequirements" value="glutenfree">
             Gluten Free
           </label>
         </fieldset>

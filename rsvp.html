@@ -26,7 +26,6 @@
 
   <div class="background">
 
-
     <nav>
       <a href="./index.html">Home</a>
       <a href="./details.html">Details</a>
@@ -35,7 +34,7 @@
     </nav>
 
 
-    <div class="wrapper">
+    <div class="wrapper wrapper--big">
 
       <div class="intro">
         <h1>
@@ -63,13 +62,25 @@
           <input type="email" name="guestEmail" required>
         </label>
         <fieldset>
-          <legend>RSVP</legend>
+          <legend>The wedding</legend>
           <label>
             <input type="radio" name="RSVP" value="attending" required>
             Can't wait!
           </label>
           <label>
-            <input type="radio" name="RSVP" value="n otAttending">
+            <input type="radio" name="RSVP" value="not attending">
+            Can't make it :(
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>The next day</legend>
+          <label>
+            <input type="radio" name="day 2" value="attending" required>
+            Can't wait!
+          </label>
+          <label>
+            <input type="radio" name="day 2" value="not attending">
             Can't make it :(
           </label>
         </fieldset>
@@ -93,17 +104,19 @@
             Gluten Free
           </label>
         </fieldset>
+
+        <label>
+          <div>Notes / questions / song requests!</div>
+          <textarea></textarea>
+        </label>
+
+        <br />
         <button class="button">Submit</button>
 
       </form>
 
     </div>
     <img class="bw tophat" src="./img/hat-stars.png">
-    <img class="moon" src="./img/moon-stars.png">
-    <img class="stars" src="./img/stars.png">
   </div>
-
-
 </body>
-
 </html>

@@ -157,6 +157,8 @@ img {
   overflow: hidden;
   background: url(../img/stars.png) no-repeat;
   background-size: 65%;
+  min-height: 100vh;
+
   
   // 967ab1
 
@@ -179,7 +181,11 @@ img {
   font-size: 20px;
   max-width: 500px;
   margin: 50px auto;
-  min-height: 100vh;
+  // min-height: 100vh;
+
+  // &--big {
+  //   max-width: 400px;
+  // }
 }
 
 .tophat {

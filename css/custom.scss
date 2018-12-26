@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic|Roboto+Condensed);
+// @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic|Roboto+Condensed);
 @font-face {
   font-family: 'CanelaBold';
   src: url('../fonts/Canela-Bold.otf') format('opentype');
@@ -18,13 +18,13 @@
 body {
   background-color: #434057;
   background-color: #493D55;
-
   font-family: 'Roboto Condensed', serif;
 }
 
 h1, h2, h3 {
   font-family: 'CanelaBold', sans-serif;
   text-shadow: 1px 1px 0px rgba(0,0,0,0.8);
+  margin: 40px 0 10px;
 }
 
 h1 {
@@ -44,6 +44,44 @@ h1 {
       margin-left: -42px;
       opacity: 1;
     }
+  }
+}
+
+p {
+  margin: 5px 0 10px;
+}
+
+.laura {
+  display: inline-block;
+  margin-right: 110px;
+  
+  @media (max-width: 768px) {
+    margin-right: 80px;
+  }
+}
+
+   
+.amp {
+  position: absolute;
+  left: 50%;
+  margin-left: -42px;
+  top: -68px;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif !important;;
+  font-size: 160px;
+  color: #eeeeee;
+  opacity: .8;
+  z-index: 0;
+  transition: all 300ms ease;
+  line-height: 1;
+
+  @media (max-width: 768px) {
+    font-size: 120px;
+    margin-left: -33px;
+    top: -12px;
+    color: #FFD93A;
+    opacity: .9;
+
   }
 }
 
@@ -78,6 +116,10 @@ nav {
     &:hover {
       background: #967ab1;
     }
+
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
   }
 }
 
@@ -85,40 +127,22 @@ nav {
   border: 10px solid #fcffed;
 }
 
-.amp {
-  position: absolute;
-  left: 50%;
-  margin-left: -42px;
-  top: -100px;
-  font-weight: 400;
-  font-family: 'Playfair Display', serif !important;;
-  font-size: 160px;
-  color: #eeeeee;
-  opacity: .8;
-  z-index: 0;
-  transition: all 300ms ease;
-
-  @media (max-width: 768px) {
-    font-size: 140px;
-    margin-left: -42px;
-    top: -84px;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 140px;
-    margin-left: -42px;
-    top: -62px;
-  }
-}
-
 label, fieldset {
   display: block;
   margin-bottom: 15px;
-  font-size: 18px;
 }
 
 fieldset label {
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+input {
+  margin-top: 5px;
+}
+
+legend {
+  margin-bottom: 5px;
 }
 
 img {
@@ -151,23 +175,19 @@ img {
 
 .background {
   padding: 100px 50px 50px;
-  // background-color: #493D55;
   color: white;
   position: relative;
   overflow: hidden;
-  background: url(../img/stars.png) no-repeat;
+  background: url(../img/stars.png) no-repeat, 
+    url(../img/stars2.png) bottom right no-repeat;
   background-size: 65%;
   min-height: 100vh;
-
-  
-  // 967ab1
 
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 0;
-    padding: 20px;
+    padding: 100px 20px;
   }
 }
 
@@ -180,12 +200,15 @@ img {
   z-index: 1;
   font-size: 20px;
   max-width: 500px;
-  margin: 50px auto;
-  // min-height: 100vh;
+  margin: 0 auto;
+}
 
-  // &--big {
-  //   max-width: 400px;
-  // }
+form {
+  margin-bottom: 0;
+
+  @media (max-width: 600px) {
+    margin-bottom: 250px;
+  }
 }
 
 .tophat {
@@ -199,15 +222,27 @@ img {
   }
 }
 
+.hoop {
+  position: absolute;
+  z-index: 0;
+  bottom: 0; 
+  right: 0; 
+  height: 430px;
+  
+  @media (max-width: 600px) {
+    height: 240px;
+  }
+}
+
 .moon {
   position: absolute;
   left: 10px;
-  top: 165px;
+  top: 30%;
   z-index: 0;
-  height: 300px;
+  height: 350px;
 
   @media (max-width: 1100px) {
-    height: 400px;
+    height: 280px;
   }
   @media (max-width: 800px) {
     display: block;
@@ -217,6 +252,15 @@ img {
     height: 160px;
     display: none;
   }
+}
+
+.balloon {
+  position: absolute;
+  right: 260px;
+  bottom: 15%;
+  z-index: 0;
+  display: block;
+  filter: grayscale(60%);
 }
 
 .stars {

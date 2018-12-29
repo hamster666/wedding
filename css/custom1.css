@@ -6,6 +6,11 @@
   src: url("../fonts/Canela-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal; }
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url("../fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
 * {
   box-sizing: border-box; }
 
@@ -51,7 +56,7 @@ p {
   margin-left: -42px;
   top: -68px;
   font-weight: 400;
-  font-family: 'Playfair Display';
+  font-family: 'PlayfairDisplay';
   font-size: 160px;
   color: #eeeeee;
   opacity: .8;

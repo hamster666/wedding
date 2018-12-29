@@ -9,6 +9,12 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
 
 * {
   box-sizing: border-box;
@@ -27,7 +33,6 @@ h1, h2, h3 {
 }
 
 h1 {
-  // font-family: 'Playfair Display';
   color: white;
   font-size: 50px;
   transition: all 300ms ease;
@@ -68,7 +73,7 @@ p {
   margin-left: -42px;
   top: -68px;
   font-weight: 400;
-  font-family: 'Playfair Display';
+  font-family: 'PlayfairDisplay';
   font-size: 160px;
   color: #eeeeee;
   opacity: .8;

@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic);
 * {
   box-sizing: border-box; }
 
@@ -25,7 +26,7 @@ h1, h2, h3 {
   margin: 40px 0 10px; }
 
 h1 {
-  font-family: 'PlayfairDisplay', sans-serif;
+  font-family: 'PlayfairDisplay', 'Playfair Display', sans-serif;
   color: white;
   font-size: 50px;
   transition: all 300ms ease;

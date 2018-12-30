@@ -1,7 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic);
-* {
-  box-sizing: border-box; }
-
 @font-face {
   font-family: 'CanelaBold';
   src: url("../fonts/Canela-Bold.otf") format("opentype");
@@ -52,7 +49,7 @@ p {
       margin-right: 80px; } }
 
 .amp2 {
-  font-family: 'PlayfairDisplay';
+  font-family: 'Playfair Display';
   font-size: 160px; }
 
 .amp {

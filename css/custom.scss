@@ -24,29 +24,32 @@ h1, h2, h3 {
   margin: 40px 0 10px;
 }
 
+p {
+  margin: 5px 0 10px;
+}
+
 h1 {
   color: white;
   font-size: 50px;
   transition: all 300ms ease;
   margin: 60px 0;
 
-  @media (max-width: 768px) {
-    font-size: 38px;
-    margin: 40px 0 50px;
-  }
-
   &:hover{ 
     letter-spacing: 2px;
     .amp {
       color: #FFD93A;
-      margin-left: -42px;
+      margin-left: -46px;
       opacity: 1;
     }
   }
-}
 
-p {
-  margin: 5px 0 10px;
+  @media (max-width: 768px) {
+    font-size: 38px;
+    margin: 40px 0 50px;
+    &:hover{ 
+      letter-spacing: normal;
+    }
+  }
 }
 
 .laura {
@@ -57,18 +60,12 @@ p {
     margin-right: 80px;
   }
 }
-
-.amp2 {
-  font-family: 'Playfair Display';
-  font-size: 160px;
-}
-
    
 .amp {
   position: absolute;
   left: 50%;
-  margin-left: -42px;
-  top: -68px;
+  margin-left: -46px;
+  top: -66px;
   font-weight: 400;
   font-family: 'Playfair Display';
   font-size: 160px;
@@ -77,14 +74,14 @@ p {
   z-index: 0;
   transition: all 300ms ease;
   line-height: 1;
+  text-shadow: none;
 
   @media (max-width: 768px) {
     font-size: 120px;
-    margin-left: -33px;
-    top: -12px;
+    margin-left: -34px;
+    top: -11px;
     color: #FFD93A;
     opacity: .9;
-
   }
 }
 
@@ -133,6 +130,11 @@ nav {
 label, fieldset {
   display: block;
   margin-bottom: 15px;
+}
+
+textarea {
+  width: 280px;
+  height: 120px;
 }
 
 fieldset label {
@@ -190,7 +192,14 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
+  }
+}
+
+.date-time {
+  font-size: 20px;
+  @media (max-width: 350px) {
+    font-size: 18px;
   }
 }
 

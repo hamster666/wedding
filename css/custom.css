@@ -17,24 +17,26 @@ h1, h2, h3 {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
   margin: 40px 0 10px; }
 
+p {
+  margin: 5px 0 10px; }
+
 h1 {
   color: white;
   font-size: 50px;
   transition: all 300ms ease;
   margin: 60px 0; }
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 38px;
-      margin: 40px 0 50px; } }
   h1:hover {
     letter-spacing: 2px; }
     h1:hover .amp {
       color: #FFD93A;
-      margin-left: -42px;
+      margin-left: -46px;
       opacity: 1; }
-
-p {
-  margin: 5px 0 10px; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 38px;
+      margin: 40px 0 50px; }
+      h1:hover {
+        letter-spacing: normal; } }
 
 .laura {
   display: inline-block;
@@ -43,15 +45,11 @@ p {
     .laura {
       margin-right: 80px; } }
 
-.amp2 {
-  font-family: 'Playfair Display';
-  font-size: 160px; }
-
 .amp {
   position: absolute;
   left: 50%;
-  margin-left: -42px;
-  top: -68px;
+  margin-left: -46px;
+  top: -66px;
   font-weight: 400;
   font-family: 'Playfair Display';
   font-size: 160px;
@@ -59,12 +57,13 @@ p {
   opacity: .8;
   z-index: 0;
   transition: all 300ms ease;
-  line-height: 1; }
+  line-height: 1;
+  text-shadow: none; }
   @media (max-width: 768px) {
     .amp {
       font-size: 120px;
-      margin-left: -33px;
-      top: -12px;
+      margin-left: -34px;
+      top: -11px;
       color: #FFD93A;
       opacity: .9; } }
 
@@ -103,6 +102,10 @@ nav {
 label, fieldset {
   display: block;
   margin-bottom: 15px; }
+
+textarea {
+  width: 280px;
+  height: 120px; }
 
 fieldset label {
   margin-bottom: 5px;
@@ -148,7 +151,13 @@ img {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 100px 20px; } }
+      padding: 80px 20px; } }
+
+.date-time {
+  font-size: 20px; }
+  @media (max-width: 350px) {
+    .date-time {
+      font-size: 18px; } }
 
 .intro {
   text-align: center; }
